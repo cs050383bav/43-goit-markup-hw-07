@@ -75,18 +75,10 @@
     color: var(--secondary-text-color);
     margin-left: 50px;
     white-space: nowrap;
-}
-
-.header-mail:hover,
-.header-phone:hover,
-.header-mail:focus,
-.header-phone:focus,
-.header-mail:hover {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-text-color);
+    &:focus,
+    &:hover {
+        color: var(--accent-text-color);
+    }
 }
 
 .header-icon {
@@ -99,12 +91,11 @@
 .header-icon use {
 }
 
-.header-item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .header-item {
     position: relative;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .marker-index::after,
