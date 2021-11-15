@@ -1,0 +1,16 @@
+.button-blue {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--accent-text-color);
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 200px;
+    &:focus,
+    &:hover {
+        color: ffffff;
+        background-color: #188ce8;
+    }
+}
