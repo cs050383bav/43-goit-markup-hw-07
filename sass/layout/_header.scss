@@ -1,14 +1,12 @@
 .header {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-block-color: #ececec;
+    border-bottom: 1px solid #ececec;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .header-nav {
