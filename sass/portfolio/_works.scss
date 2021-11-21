@@ -17,6 +17,7 @@
     background: #f5f4fa;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.02);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         color: #ffffff;
@@ -61,11 +62,11 @@
 .works-item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+    // &:hover,
+    // &:focus {
+    //     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    //         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    // }
     &:nth-child(3n) {
         margin-right: 0;
     }
@@ -74,11 +75,24 @@
     }
 }
 
+.work-link{
+    display: block;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+
 .work-img {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    .works-item:hover &::after {
+    .work-link:hover &::after,
+    .work-link:focus &::after{
         transform: translateY(0);
     }
 }

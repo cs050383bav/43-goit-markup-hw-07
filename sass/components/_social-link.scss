@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         background-color: var(--accent-text-color);
@@ -31,6 +32,8 @@
     fill: #afb1b8;
     width: 20px;
     height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     .cocial-icons__link:hover &,
     .cocial-icons__link:focus & {
         fill: #ffffff;
