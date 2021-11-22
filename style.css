@@ -500,9 +500,9 @@ img {
     padding: 60px 0px;
 }
 
-.footer-mail,
-.footer-phone,
-.footer-address {
+.footer-data__mail,
+.footer-data__phone,
+.footer-data__address {
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 14px;
@@ -511,16 +511,16 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-address {
+.footer-data__address {
     color: #ffffff;
 }
 
-.footer-mail:hover,
-.footer-phone:hover,
-.footer-address:hover,
-.footer-mail:focus,
-.footer-phone:focus,
-.footer-address:focus {
+.footer-data__mail:hover,
+.footer-data__phone:hover,
+.footer-data__address:hover,
+.footer-data__mail:focus,
+.footer-data__phone:focus,
+.footer-data__address:focus {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -533,7 +533,7 @@ img {
     display: block;
 }
 
-.footer-item:not(:last-child) {
+.footer-data__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -566,7 +566,7 @@ img {
 .footer-send {
     margin-left: 93px;
 }
-.footer-send-title {
+.footer-send__title {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -576,10 +576,10 @@ img {
     text-transform: uppercase;
     color: #ffffff;
 }
-.footer-send-fild {
+.footer-send__fild {
     display: flex;
 }
-.footer-send-mail {
+.footer-send__mail {
     background-color: #2f303a;
     width: 358px;
     height: 50px;
@@ -591,16 +591,16 @@ img {
     border-radius: 4px;
 }
 
-.footer-send-button {
+.footer-send__button {
     display: flex;
     align-items: center;
 }
 
-.footer-send-name {
+.footer-send__name {
     margin-right: 10px;
 }
 
-.footer-send-telegram {
+.footer-send__telegram {
     width: 24px;
     height: 24px;
 }
@@ -775,13 +775,13 @@ img {
     border-radius: 50px;
 }
 
-.modal-img {
+.modal-close__img {
     width: 11px;
     height: 11px;
     fill: #000000;
 }
-.modal-close:hover .modal-img,
-.modal-close:focus .modal-img {
+.modal-close:hover .modal-close__img,
+.modal-close:focus .modal-close__img {
     fill: var(--accent-text-color);
 }
 
@@ -793,7 +793,7 @@ img {
     display: flex;
     flex-direction: column;
 }
-.moal-form-head {
+.modal-form__head {
     margin-bottom: 12px;
     font-weight: bold;
     font-size: 20px;
@@ -802,7 +802,7 @@ img {
     text-align: center;
     color: #212121;
 }
-.modal-form-field {
+.modal-form__field {
     display: block;
     margin-bottom: 10px;
     font-size: 12px;
@@ -811,13 +811,13 @@ img {
     color: var(--secondary-text-color);
 }
 
-.modal-form-wrapper {
+.modal-form__wrapper {
     display: block;
     position: relative;
     margin-top: 4px;
 }
 
-.modal-form-input {
+.modal-form__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -827,12 +827,12 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus {
+.modal-form__input:focus {
     outline: none;
     border-color: var(--accent-text-color);
 }
 
-.modal-form-icon {
+.modal-form__icon {
     width: 18px;
     height: 18px;
     position: absolute;
@@ -841,11 +841,11 @@ img {
     transform: translateY(-50%);
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__icon {
     fill: var(--accent-text-color);
 }
 
-.modal-form-message {
+.modal-form__message {
     margin-top: 4px;
     width: 100%;
     height: 120px;
@@ -855,17 +855,17 @@ img {
     padding: 12px 16px;
 }
 
-.modal-form-message:focus {
+.modal-form__message:focus {
     outline: none;
     border-color: var(--accent-text-color);
 }
 
-.modal-form-fild {
+.modal-form__fild {
     position: relative;
     /* display: flex; */
 }
 
-.modal-form-checkbox-label::before {
+.modal-form__checkbox-label::before {
     position: absolute;
     left: 10px;
     display: block;
@@ -878,15 +878,15 @@ img {
     transform: translateY(-50%);
 }
 
-.modal-form-checkbox:checked ~ .modal-form-checkbox-label::before {
+.modal-form__checkbox:checked ~ .modal-form__checkbox-label::before {
     border: none;
 }
 
-.modal-form-checkbox:focus ~ .modal-form-checkbox-label::before {
+.modal-form__checkbox:focus ~ .modal-form__checkbox-label::before {
     border: 2px solid var(--accent-text-color);
 }
 
-.modal-form-checkbox:checked ~ .modal-form-border > .modal-form-icon-check {
+.modal-form__checkbox:checked ~ .modal-form__border > .modal-form__icon-check {
     position: absolute;
     display: inline-flex;
     width: 16px;
@@ -896,18 +896,18 @@ img {
     left: 10px;
 }
 
-.modal-form-icon-check {
+.modal-form__icon-check {
     display: none;
 }
 
-.modal-form-checkbox-label {
+.modal-form__checkbox-label {
     margin-left: 37px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.contact-form-button {
+.contact-form__button {
     display: block;
     margin: auto;
     margin-top: 30px;
@@ -938,7 +938,7 @@ img {
     border-radius: 4px;
     margin-bottom: 10px;
 }
-.contact-form-button {
+.contact-form__button {
     display: block;
     margin: 0 auto;
     min-width: 200px;

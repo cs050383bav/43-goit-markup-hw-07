@@ -477,25 +477,25 @@
                         >Web<span class="logo-white">Studio</span></a
                     >
                     <address class="footer-data">
-                        <ul class="footer-list list">
-                            <li class="footer-item">
+                        <ul class="footer-data__list list">
+                            <li class="footer-data__item">
                                 <a
                                     href="https://goo.gl/maps/pQ1iqYw23tvZCVZEA"
-                                    class="link footer-address"
+                                    class="link footer-data__address"
                                     >г. Киев, пр-т Леси Украинки, 26</a
                                 >
                             </li>
-                            <li class="footer-item">
+                            <li class="footer-data__item">
                                 <a
                                     href="mailto:info@example.com"
-                                    class="footer-mail link"
+                                    class="footer-data__mail link"
                                     >info@example.com</a
                                 >
                             </li>
-                            <li class="footer-item">
+                            <li class="footer-data__item">
                                 <a
                                     href="tel:+380991111111"
-                                    class="footer-phone link"
+                                    class="footer-data__phone link"
                                     >+38 099 111 11 11</a
                                 >
                             </li>
@@ -544,12 +544,12 @@
                     </ul>
                 </div>
                 <form class="footer-send" action="#">
-                    <p class="footer-send-title">подпишитесь на рассылку</p>
-                    <div class="footer-send-fild">
-                        <input class="footer-send-mail" type="email" placeholder="E-mail">
-                        <button class="button-blue footer-send-button">
-                            <span class="footer-send-name">Подписаться</span> 
-                            <svg class="footer-send-telegram">
+                    <p class="footer-send__title">подпишитесь на рассылку</p>
+                    <div class="footer-send__fild">
+                        <input class="footer-send__mail" type="email" placeholder="E-mail">
+                        <button class="button-blue footer-send__button">
+                            <span class="footer-send__name">Подписаться</span> 
+                            <svg class="footer-send__telegram">
                                 <use href="./images/sprite.svg#icon-telegram"></use>
                             </svg>
                         </button>
@@ -563,84 +563,84 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-close" data-modal-close>
-                    <svg class="modal-img">
+                    <svg class="modal-close__img">
                         <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
                 <form action="#" class="modal-form">
-                    <p class="moal-form-head">
+                    <p class="modal-form__head">
                         Оставьте свои данные, мы вам перезвоним
                     </p>
-                    <label class="modal-form-field"
+                    <label class="modal-form__field"
                         >Имя
-                        <span class="modal-form-wrapper">
+                        <span class="modal-form__wrapper">
                             <input
                                 type="text"
-                                class="modal-form-input"
+                                class="modal-form__input"
                                 name="user-name"
                                 minlength="2"
                                 pattern="[a-zA-Zа-яёА-ЯЁ]+"
                                 title="Только буквы кирилици и латиници"
                             />
-                            <svg class="modal-form-icon">
+                            <svg class="modal-form__icon">
                                 <use href="./images/sprite.svg#icon-user"></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-field"
+                    <label class="modal-form__field"
                         >Телефон
-                        <span class="modal-form-wrapper">
+                        <span class="modal-form__wrapper">
                             <input
                                 type="tel"
-                                class="modal-form-input"
+                                class="modal-form__input"
                                 name="user-phone"
                                 pattern="[0-9]{10}"
                                 title="0671112233"
                             />
-                            <svg class="modal-form-icon">
+                            <svg class="modal-form__icon">
                                 <use
                                     href="./images/sprite.svg#icon-handset"
                                 ></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-field"
+                    <label class="modal-form__field"
                         >Почта
-                        <span class="modal-form-wrapper">
+                        <span class="modal-form__wrapper">
                             <input
                                 type="email"
-                                class="modal-form-input"
+                                class="modal-form__input"
                                 name="user-mail"
                             />
-                            <svg class="modal-form-icon">
+                            <svg class="modal-form__icon">
                                 <use
                                     href="./images/sprite.svg#icon-mail-black"
                                 ></use>
                             </svg>
                         </span>
                     </label>
-                    <label class="modal-form-field"
+                    <label class="modal-form__field"
                         >Комментарий
                         <textarea
-                            class="modal-form-message"
+                            class="modal-form__message"
                             name="user-message"
                             placeholder="Введите текст"
                         ></textarea>
                     </label>
-                    <div class="modal-form-fild">
+                    <div class="modal-form__fild">
                         
-                        <input name="contract" class="modal-form-checkbox visually-hidden" type="checkbox" id="accept-policy" required>
-                        <span class="modal-form-border">
-                            <svg for="accept-policy" class="modal-form-icon-check">
+                        <input name="contract" class="modal-form__checkbox visually-hidden" type="checkbox" id="accept-policy" required>
+                        <span class="modal-form__border">
+                            <svg for="accept-policy" class="modal-form__icon-check">
                                 <use href="./images/sprite.svg#icon-check-blue"></use>
                             </svg>
                         </span>
-                        <label for="accept-policy" class="modal-form-checkbox-label">
+                        <label for="accept-policy" class="modal-form__checkbox-label">
                            
                                 Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
                         </label>
                     </div>
-                    <button class="contact-form-button" type="submit">
+                    <button class="button-blue contact-form__button" type="submit">
                         Отправить
                     </button>
                 </form>

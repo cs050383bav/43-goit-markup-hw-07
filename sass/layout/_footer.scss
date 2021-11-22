@@ -5,9 +5,9 @@
     padding: 60px 0px;
 }
 
-.footer-mail,
-.footer-phone,
-.footer-address {
+.footer-data__mail,
+.footer-data__phone,
+.footer-data__address {
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 14px;
@@ -22,7 +22,7 @@
     }
 }
 
-.footer-address {
+.footer-data__address {
     color: #ffffff;
 }
 
@@ -31,7 +31,7 @@
     display: block;
 }
 
-.footer-item:not(:last-child) {
+.footer-data__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -64,7 +64,7 @@
 .footer-send {
     margin-left: 93px;
 }
-.footer-send-title {
+.footer-send__title {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -74,10 +74,10 @@
     text-transform: uppercase;
     color: #ffffff;
 }
-.footer-send-fild {
+.footer-send__fild {
     display: flex;
 }
-.footer-send-mail {
+.footer-send__mail {
     background-color: #2f303a;
     width: 358px;
     height: 50px;
@@ -89,16 +89,16 @@
     border-radius: 4px;
 }
 
-.footer-send-button {
+.footer-send__button {
     display: flex;
     align-items: center;
 }
 
-.footer-send-name {
+.footer-send__name {
     margin-right: 10px;
 }
 
-.footer-send-telegram {
+.footer-send__telegram {
     width: 24px;
     height: 24px;
 }
